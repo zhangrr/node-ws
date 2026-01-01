@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Network - Protect Earth</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -26,17 +26,18 @@
         body {
             background-color: var(--light);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7; /* Slightly increased line height for readability */
+            font-size: 16px;
         }
 
         header {
-            background: linear-gradient(to right, var(--primary), var(--secondary));
+            background: rgba(46, 125, 50, 0.95); /* Slightly transparent primary color */
             color: var(--white);
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
         }
 
         .container {
@@ -131,20 +132,20 @@
             display: inline-block;
             background-color: var(--accent);
             color: var(--white);
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
+            padding: 0.9rem 2.2rem; /* Slightly larger padding */
+            border-radius: 8px; /* More modern rounded corners */
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Slightly enhanced shadow */
         }
 
         .btn:hover {
             background-color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px); /* More pronounced lift effect */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger hover shadow */
         }
 
         section {
@@ -170,16 +171,17 @@
             bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
+            width: 90px; /* Slightly wider underline */
+            height: 5px; /* Thicker underline */
             background-color: var(--accent);
-            border-radius: 2px;
+            border-radius: 3px;
         }
 
         .section-title p {
             color: var(--text);
             max-width: 700px;
             margin: 0 auto;
+            font-size: 1.1rem;
         }
 
         .about-content {
@@ -190,9 +192,9 @@
         }
 
         .about-img {
-            border-radius: 10px;
+            border-radius: 12px; /* More rounded */
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
         }
 
         .about-img img {
@@ -203,53 +205,50 @@
         }
 
         .about-img:hover img {
-            transform: scale(1.05);
+            transform: scale(1.08); /* More pronounced zoom */
         }
 
         .about-text h3 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 1.5rem;
             color: var(--dark);
         }
 
         .about-text p {
             margin-bottom: 1.5rem;
+            font-size: 1.05rem;
         }
 
         .stats {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 4rem; /* More space */
         }
 
         .stat-item {
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1.5rem; /* More padding */
             background-color: var(--white);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            border-radius: 12px; /* More rounded */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Enhanced shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .stat-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .stat-item i {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
+            transform: translateY(-12px); /* More pronounced lift */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Stronger hover shadow */
         }
 
         .stat-item h3 {
-            font-size: 2.5rem;
+            font-size: 3rem; /* Larger numbers */
             color: var(--dark);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
         }
 
         .stat-item p {
             color: var(--text);
+            font-size: 1.1rem;
         }
 
         .initiatives {
@@ -259,23 +258,24 @@
         .initiatives-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .initiative-card {
             background-color: var(--light);
-            border-radius: 10px;
+            border-radius: 12px; /* More rounded */
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Enhanced shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .initiative-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-12px); /* More pronounced lift */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Stronger hover shadow */
         }
 
         .initiative-img {
-            height: 200px;
+            height: 220px; /* Slightly taller images */
             overflow: hidden;
         }
 
@@ -287,38 +287,39 @@
         }
 
         .initiative-card:hover .initiative-img img {
-            transform: scale(1.1);
+            transform: scale(1.15); /* More pronounced zoom */
         }
 
         .initiative-content {
-            padding: 1.5rem;
+            padding: 2rem;
         }
 
         .initiative-content h3 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-bottom: 1rem;
             color: var(--dark);
         }
 
         .initiative-content p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.05rem;
         }
 
         .cta {
             background: linear-gradient(to right, var(--primary), var(--secondary));
             color: var(--white);
             text-align: center;
-            padding: 5rem 0;
+            padding: 6rem 0; /* More padding */
         }
 
         .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 3rem; /* Larger heading */
+            margin-bottom: 1.8rem;
         }
 
         .cta p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
@@ -337,21 +338,21 @@
         footer {
             background-color: var(--dark);
             color: var(--white);
-            padding: 3rem 0 1rem;
+            padding: 4rem 0 2rem; /* More padding */
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-bottom: 2rem;
+            gap: 2.5rem; /* More gap */
+            margin-bottom: 2.5rem;
         }
 
         .footer-column h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 1.8rem;
             position: relative;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
         }
 
         .footer-column h3::after {
@@ -359,13 +360,13 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 40px;
-            height: 2px;
+            width: 50px; /* Wider underline */
+            height: 3px; /* Thicker underline */
             background-color: var(--accent);
         }
 
         .footer-column p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
         }
 
         .footer-links {
@@ -373,7 +374,7 @@
         }
 
         .footer-links li {
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
         }
 
         .footer-links li a {
@@ -384,42 +385,53 @@
 
         .footer-links li a:hover {
             color: var(--accent);
-            padding-left: 5px;
+            padding-left: 8px; /* More pronounced slide effect */
         }
 
         .social-links {
             display: flex;
-            gap: 1rem;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
         }
 
         .social-links a {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
+            width: 50px; /* Larger social buttons */
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.15); /* Slightly more visible background */
+            border-radius: 8px; /* Square with rounded corners */
             color: var(--white);
             text-decoration: none;
+            font-weight: 600;
             transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
 
         .social-links a:hover {
             background-color: var(--accent);
-            transform: translateY(-5px);
+            transform: translateY(-7px); /* More pronounced lift */
         }
 
         .copyright {
             text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         .mobile-menu {
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         @media (max-width: 992px) {
@@ -442,11 +454,11 @@
 
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem; /* Adjusted for better readability on smaller screens */
             }
             
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1.2rem; /* Adjusted for better readability on smaller screens */
             }
             
             nav ul {
@@ -473,6 +485,8 @@
             
             .mobile-menu {
                 display: block;
+                font-size: 1.2rem; /* Slightly smaller for mobile */
+                padding: 0.4rem 0.8rem;
             }
             
             .initiatives-grid {
@@ -485,6 +499,12 @@
             
             .stats {
                 grid-template-columns: 1fr;
+            }
+            
+            .social-links a {
+                width: 45px; /* Slightly smaller social buttons */
+                height: 45px;
+                font-size: 0.85rem;
             }
         }
 
@@ -499,12 +519,11 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
                 <span>Green Network</span>
             </div>
             <nav>
                 <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
+                    Menu
                 </div>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -547,22 +566,18 @@
             </div>
             <div class="stats">
                 <div class="stat-item">
-                    <i class="fas fa-tree"></i>
                     <h3 class="counter" data-target="2500000">0</h3>
                     <p>Trees Planted</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-users"></i>
                     <h3 class="counter" data-target="50000">0</h3>
                     <p>Active Members</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-globe-americas"></i>
                     <h3 class="counter" data-target="120">0</h3>
                     <p>Countries Reached</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-recycle"></i>
                     <h3 class="counter" data-target="1500">0</h3>
                     <p>Cleanup Projects</p>
                 </div>
@@ -629,10 +644,10 @@
                     <h3>Green Network</h3>
                     <p>We are dedicated to protecting our planet through collaborative action, education, and sustainable solutions.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -657,9 +672,9 @@
                 </div>
                 <div class="footer-column">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Copper Creek Drive, New York</p>
-                    <p><i class="fas fa-phone"></i> +1 (312) 171-0771</p>
-                    <p><i class="fas fa-envelope"></i> support@greennetwork.org</p>
+                    <p>Copper Creek Drive, New York</p>
+                    <p>+1 (312) 171-0771</p>
+                    <p>support@greennetwork.org</p>
                 </div>
             </div>
             <div class="copyright">
